@@ -2,5 +2,5 @@ SHELL=/bin/bash
 BASH_ENV=~/.bashrc_conda
 
 10 * * * * conda activate tweepy; cd /home/omilab/sho/twitter_getter; python get_trending_topics.py; conda deactivate
-13 14 * * * conda activate tweepy; cd /home/omilab/sho/twitter_getter; python snscrape_tweets.py; conda deactivate
+0 8 * * * conda activate tweepy; cd /home/omilab/sho/twitter_getter; python snscrape_tweets.py; conda deactivate
 
