@@ -81,5 +81,6 @@ if '__main__'==__name__:
     print ('--- Running queries...')
     run_queries(queries, OUTPUT_FOLDER, date_range)
     print('--- Compressing results...')
-    compress_results(OUTPUT_FOLDER)
+    for date in date_range:
+        compress_results(os.path.join(OUTPUT_FOLDER, date.strftime('%Y-%m-%d')))
     print('--- Done.')
